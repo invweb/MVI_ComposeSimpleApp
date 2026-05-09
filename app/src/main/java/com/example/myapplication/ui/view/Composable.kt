@@ -73,6 +73,7 @@ fun ChatScreen(viewModel: ChatViewModel) {
 @Composable
 fun MessageList(state: ChatState, viewModel: ChatViewModel) {
     when (state) {
+
         ChatState.Loading -> {
             Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                 CircularProgressIndicator()
